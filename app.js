@@ -2,7 +2,7 @@
  * Module dependencies.
  */
 
-// mongoose setup
+// mongoose setup  ss
 require('./mongoose-db');
 require('./typeorm-db')
 
