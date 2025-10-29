@@ -1,5 +1,5 @@
-FROM nginx:stable-alpine3.19-slim
-# @sha256:154e108059468bed12d676c3c446e4767db24d6099f09e92918d28e052960bf4
+FROM nginx:1.29.3-alpine-slim@sha256:4c175d0d849aae0e0eedc64d718ef6323bed2bc68ee673e2d0a1bd5d501d0e5f
+# FROM nginx:stable-alpine3.19-slim@sha256:154e108059468bed12d676c3c446e4767db24d6099f09e92918d28e052960bf4
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY ./nginx/sites-enabled /etc/nginx/sites-enabled
 RUN mkdir -p /etc/pki/nginx/certs
